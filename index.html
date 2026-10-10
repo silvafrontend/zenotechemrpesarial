@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Açaí Tropical & Cia | O açaí mais cremoso da cidade</title>
+<meta name="description" content="Açaí cremoso, mais de 20 adicionais e entrega rápida. Peça pelo WhatsApp!">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { acai:{DEFAULT:'#6B21A8',deep:'#4A154B'}, tropic:{DEFAULT:'#16A34A',light:'#22C55E'}, gold:{DEFAULT:'#FACC15',dark:'#EAB308'}, creme:'#FBF7FF' },
+  fontFamily: { display:['Bricolage Grotesque','sans-serif'], body:['DM Sans','sans-serif'] }
+}}}
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+<!-- NAVBAR -->
+<header id="nav" class="fixed top-0 inset-x-0 z-50 bg-acai-deep/80 backdrop-blur-lg border-b border-white/10">
+  <nav class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between text-white">
+    <a href="#inicio" class="flex items-center gap-2 font-display font-extrabold text-lg">
+      <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="19" rx="9" ry="10" fill="#a21caf"/><ellipse cx="13" cy="16" rx="3" ry="4" fill="#c084fc" opacity=".6"/><path d="M16 9c0-4 3-6 7-6-1 4-3 6-7 6z" fill="#22C55E"/></svg>
+      Açaí Tropical &amp; Cia
+    </a>
+    <ul class="hidden lg:flex items-center gap-6 text-sm font-medium">
+      <li><a class="hover:text-gold" href="#inicio">Início</a></li>
+      <li><a class="hover:text-gold" href="#sobre">Sobre Nós</a></li>
+      <li><a class="hover:text-gold" href="#cardapio">Cardápio</a></li>
+      <li><a class="hover:text-gold" href="#tamanhos">Tamanhos</a></li>
+      <li><a class="hover:text-gold" href="#garrafa">Açaí de Garrafa</a></li>
+      <li><a class="hover:text-gold" href="#faq">Dúvidas</a></li>
+      <li><a class="hover:text-gold" href="#contato">Contato</a></li>
+    </ul>
+    <div class="flex items-center gap-2">
+      <a href="https://wa.me/5551981538566?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido!" target="_blank" rel="noopener" class="bg-tropic hover:bg-tropic-light transition text-white font-bold text-sm px-4 py-2 rounded-full">Pedir Agora</a>
+      <button id="menuBtn" class="lg:hidden p-2" aria-label="Abrir menu" aria-expanded="false">
+        <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h18M4 13h18M4 19h18"/></svg>
+      </button>
+    </div>
+  </nav>
+  <div id="mobileMenu" class="hidden lg:hidden bg-acai-deep border-t border-white/10 text-white">
+    <ul class="px-4 py-3 grid gap-1">
+      <li><a class="block py-2" href="#inicio">Início</a></li><li><a class="block py-2" href="#sobre">Sobre Nós</a></li>
+      <li><a class="block py-2" href="#cardapio">Cardápio</a></li><li><a class="block py-2" href="#tamanhos">Tamanhos</a></li>
+      <li><a class="block py-2" href="#garrafa">Açaí de Garrafa</a></li><li><a class="block py-2" href="#faq">Dúvidas (FAQ)</a></li>
+      <li><a class="block py-2" href="#contato">Contato</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="inicio" class="grad-hero text-white pt-28 pb-20 lg:pt-36 lg:pb-28 relative overflow-hidden">
+  <div class="absolute -top-20 -right-20 w-96 h-96 rounded-full bg-gold/20 blur-3xl"></div>
+  <div class="absolute bottom-0 -left-20 w-80 h-80 rounded-full bg-tropic/25 blur-3xl"></div>
+  <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center relative">
+    <div class="reveal">
+      <span class="inline-block bg-gold text-acai-deep font-bold text-sm px-3 py-1 rounded-full mb-5">Entrega grátis no primeiro pedido</span>
+      <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-[1.05]">O Açaí Mais Cremoso e Saboroso da Cidade!</h1>
+      <p class="mt-5 text-lg text-white/85 max-w-lg">Açaí puro, batido na hora, com frutas frescas e mais de 20 adicionais. Chega gelado e cremoso na sua porta, rápido do jeito que você gosta.</p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-3">
+        <a href="https://wa.me/5551981538566?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido!" target="_blank" rel="noopener" class="pulse-ring bg-tropic hover:bg-tropic-light transition text-white font-bold px-7 py-4 rounded-full text-center">Faça seu Pedido no WhatsApp</a>
+        <a href="#cardapio" class="glass hover:bg-white/20 transition font-bold px-7 py-4 rounded-full text-center">Ver Cardápio Completo</a>
+      </div>
+      <dl class="mt-10 flex gap-8 text-sm">
+        <div><dt class="text-white/70">Entrega média</dt><dd class="font-display font-extrabold text-2xl">30 min</dd></div>
+        <div><dt class="text-white/70">Adicionais</dt><dd class="font-display font-extrabold text-2xl">20+</dd></div>
+        <div><dt class="text-white/70">Avaliação</dt><dd class="font-display font-extrabold text-2xl">4,9 ★</dd></div>
+      </dl>
+    </div>
+    <div class="reveal relative">
+      <div class="float rounded-[2.5rem] overflow-hidden shadow-2xl ring-4 ring-white/20 card-img" style="aspect-ratio:1/1">
+        <img src="https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=900&q=80" alt="Tigela de açaí recheada com frutas e granola" class="w-full h-full object-cover" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'w-full h-full grid place-items-center text-9xl',textContent:'🍇'}))">
+      </div>
+      <div class="glass absolute -bottom-5 -left-3 sm:-left-6 rounded-2xl px-4 py-3 text-sm">
+        <p class="font-bold">100% fruta selecionada</p><p class="text-white/75">Sem conservantes</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS / SOBRE -->
+<section id="sobre" class="py-20">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="reveal max-w-2xl">
+      <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-acai-deep">Feito com fruta de verdade, entregue com pressa</h2>
+      <p class="mt-4 text-lg text-stone-600">Somos uma açaiteria de bairro que cresceu servindo o mesmo açaí que a gente gosta de comer: grosso, gelado e cheio de coisa boa por cima.</p>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5" id="diffs"></div>
+  </div>
+</section>
+
+<!-- CARDÁPIO: TAMANHOS -->
+<section id="cardapio" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 id="tamanhos" class="reveal font-display font-extrabold text-3xl sm:text-4xl text-acai-deep scroll-mt-24">Escolha o seu tamanho</h2>
+    <p class="reveal mt-3 text-stone-600">Todos com açaí cremoso e 3 acompanhamentos grátis à sua escolha.</p>
+    <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="sizes"></div>
+  </div>
+</section>
+
+<!-- AÇAÍ DE GARRAFA -->
+<section id="garrafa" class="py-20 grad-hero text-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="reveal font-display font-extrabold text-3xl sm:text-4xl">Açaí de garrafa: leve, bebe e vai</h2>
+    <p class="reveal mt-3 text-white/80 max-w-xl">Prático para o trabalho, a praia ou o sofá. Agite e tome bem gelado.</p>
+    <div class="mt-10 grid md:grid-cols-3 gap-6" id="bottles"></div>
+  </div>
+</section>
+
+<!-- ADICIONAIS -->
+<section class="py-20">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="reveal font-display font-extrabold text-3xl sm:text-4xl text-acai-deep">Monte do seu jeito</h2>
+    <p class="reveal mt-3 text-stone-600">Os marcados em verde saem de graça em qualquer tamanho. Os outros custam a partir de R$ 2,00.</p>
+    <div class="reveal mt-8 flex flex-wrap gap-3" id="addons"></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-20 bg-white">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="reveal font-display font-extrabold text-3xl sm:text-4xl text-acai-deep text-center">Dúvidas frequentes</h2>
+    <div class="mt-10 space-y-3" id="faqList"></div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="py-16 px-4">
+  <div class="reveal max-w-4xl mx-auto grad-hero text-white rounded-[2rem] p-10 text-center shadow-xl">
+    <h2 class="font-display font-extrabold text-3xl sm:text-4xl">Bateu a vontade de açaí?</h2>
+    <p class="mt-3 text-white/85">Chame no WhatsApp e receba em poucos minutos.</p>
+    <a href="https://wa.me/5551981538566?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido!" target="_blank" rel="noopener" class="inline-block mt-6 bg-tropic hover:bg-tropic-light transition font-bold px-8 py-4 rounded-full">Pedir pelo WhatsApp</a>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer id="contato" class="bg-acai-deep text-white/85 pt-14 pb-8">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-10">
+    <div>
+      <p class="font-display font-extrabold text-xl text-white">Açaí Tropical &amp; Cia</p>
+      <p class="mt-3 text-sm">Açaí cremoso, fruta de verdade e entrega rápida.</p>
+      <a href="https://instagram.com/s.ilvatxz_" target="_blank" rel="noopener" class="inline-flex items-center gap-2 mt-4 hover:text-gold" aria-label="Instagram">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        @s.ilvatxz_
+      </a>
+    </div>
+    <address class="not-italic text-sm space-y-2">
+      <p class="font-bold text-white">Contato</p>
+      <p>Av. Das Frutas, 1000 - Centro (endereço de demonstração)</p>
+      <p>Todos os dias, das 12h às 23h</p>
+      <p>WhatsApp: <a class="underline hover:text-gold" href="https://wa.me/5551981538566" target="_blank" rel="noopener">(51) 98153-8566</a></p>
+    </address>
+    <div class="text-sm">
+      <p class="font-bold text-white">Links úteis</p>
+      <ul class="mt-2 space-y-1">
+        <li><a class="hover:text-gold" href="#inicio">Início</a></li><li><a class="hover:text-gold" href="#cardapio">Cardápio</a></li>
+        <li><a class="hover:text-gold" href="#garrafa">Açaí de Garrafa</a></li><li><a class="hover:text-gold" href="#faq">Dúvidas</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="mt-10 text-center text-xs text-white/55">© <span id="year"></span> Açaí Tropical &amp; Cia. Todos os direitos reservados. Site de demonstração.</p>
+</footer>
+
+<!-- WHATSAPP FLUTUANTE -->
+<a href="https://wa.me/5551981538566?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido!" target="_blank" rel="noopener" aria-label="Pedir pelo WhatsApp" class="pulse-ring fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-tropic-light grid place-items-center shadow-xl hover:scale-110 transition">
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="#fff" aria-hidden="true"><path d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.3.6 4.4 1.7 6.3L3 29l7.4-1.9c1.8 1 3.8 1.5 5.6 1.5 7 0 12.7-5.6 12.7-12.5S23 3 16 3zm0 22.9c-1.8 0-3.5-.5-5-1.4l-.4-.2-4.4 1.1 1.2-4.2-.3-.4a10 10 0 0 1-1.6-5.4C5.5 9.9 10.2 5.3 16 5.3s10.5 4.6 10.5 10.3S21.800 25.900 16 25.900zm5.800-7.500c-.3-.2-1.900-.9-2.200-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7.100a8.400 8.400 0 0 1-4.200-3.600c-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400s-1.100 1.100-1.100 2.600 1.100 3 1.300 3.200 2.200 3.300 5.300 4.600c2 .8 2.700.9 3.700.7.600-.1 1.900-.8 2.200-1.500s.3-1.400.2-1.500-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
